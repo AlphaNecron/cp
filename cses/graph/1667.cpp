@@ -16,7 +16,7 @@ int main() {
     q.pop();
     for (int v : adj[u])
       if (!par[v])
-        q.push(v), par[v] = u, cerr << v;
+        q.push(v), par[v] = u;
   }
   if (!par[n])
     return cout << "IMPOSSIBLE", 0;
